@@ -2157,7 +2157,9 @@
   <ItemGroup>
     <None Include="Report Files\CancelLoadingMonthly.rpt" />
     <None Include="Report Files\Cust.rpt" />
-    <None Include="Report Files\Delivery_Receipt.rpt" />
+    <None Include="Report Files\Delivery_Receipt.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Report Files\Detail Change BIO HSD.rpt" />
     <None Include="Report Files\Detail Change BIO HSD1.rpt" />
     <None Include="Report Files\Detail Change BIO HSD_Bak.rpt" />
