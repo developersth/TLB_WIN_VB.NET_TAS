@@ -126,22 +126,27 @@ Public Class frmrptOilLoading
     End Sub
 
     Private Sub msGridLoad_DoubleClick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles msGridLoad.DoubleClick
-        Dim index As Integer = msGridLoad.CurrentRow.Index
-        frmrptShowReport.mParameter = msGridLoad.Rows(index).Cells(1).Value
-        frmrptShowReport.mRptFileName = "Detail Oil Bulk Loading.rpt"
-        frmrptShowReport.Show()
-
+        ShowReport()
     End Sub
+    Private Sub ShowReport()
+        Dim index As Integer = msGridLoad.CurrentRow.Index
+        Dim vLoadNo = msGridLoad.Rows(index).Cells(1).Value
+        Dim rptFileName = GetReportFileName(52010063)
+        Dim dt As DataTable = CRService.DAILY_LOADING_DETAIL(vLoadNo)
+        With frmMainShowReport
+            .mRptFileName = rptFileName
+            .dt = dt
+            .Show()
+        End With
+    End Sub
+
 
     Private Sub cmdClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdClose.Click
         Me.Close()
     End Sub
 
     Private Sub cmdPready_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdPready.Click
-        Dim index As Integer = msGridLoad.CurrentRow.Index
-        frmrptShowReport.mParameter = msGridLoad.Rows(index).Cells(1).Value
-        frmrptShowReport.mRptFileName = "Detail Oil Bulk Loading.rpt"
-        frmrptShowReport.Show()
+        ShowReport()
     End Sub
 
 

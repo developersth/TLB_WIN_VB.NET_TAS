@@ -55,6 +55,8 @@ Public Class frmConfigReportSetting_sub
 #Region "Menu Event"
     Private Sub UcSave1_OnClickSave(ByVal ucName As System.String) Handles UcSave1.OnClickSave
         If frm_work = 1 Then 'Add
+            cbPrinterId.SelectedIndex = cbPrinter.FindString(cbPrinter.Text)
+            cbHeadderId.SelectedIndex = cbReportType.FindString(cbReportType.Text)
             If txtReportID.Text.Trim = "" Or txtReportName.Text.Trim = "" Or cbHeadderId.Text.Trim = "" Or txtRepotPath.Text.Trim = "" Or cbPrinterId.Text.Trim = "" Then
                 MessageBox.Show("ไม่สามารถบันทึกข้อมูลได้" & vbCrLf & vbCrLf & " ท่านใส่ข้อมูลไม่ครบ กรุณาตรวจสอบข้อมูลอีกครั้ง", "System TAS")
                 Exit Sub

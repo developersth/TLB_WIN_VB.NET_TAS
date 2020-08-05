@@ -697,12 +697,27 @@ Represents a strongly typed in-memory cache of data.
 Represents the strongly named DataTable class.
 </summary>
 </member>
+<member name="T:GINNTAS.DataSetTLB.DAILY_LOADING_DETAILDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
 <member name="T:GINNTAS.DataSetTLB.VIEW_LOADING_INTRODUCTION_TMRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
 </member>
+<member name="T:GINNTAS.DataSetTLB.DAILY_LOADING_DETAILRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
 <member name="T:GINNTAS.DataSetTLB.VIEW_LOADING_INTRODUCTION_TMRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:GINNTAS.DataSetTLB.DAILY_LOADING_DETAILRowChangeEvent">
 <summary>
 Row event argument class
 </summary>

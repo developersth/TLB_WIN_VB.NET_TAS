@@ -580,7 +580,8 @@ Public Class frmLoadLoading
 
         Try
             rptFileName = GetReportFileName(52010062)
-            Dim dt As DataTable = CRService.VIEW_LOADING_INTRODUCTION_TM("630000351")
+            Dim vLoadNo = MSGridHeader.Rows(index).Cells(1).Value.ToString
+            Dim dt As DataTable = CRService.VIEW_LOADING_INTRODUCTION_TM(vLoadNo)
             'frmrptShowReport.Close()
             With frmMainShowReport
                 .mRptFileName = rptFileName
