@@ -580,10 +580,11 @@ Public Class frmLoadLoading
 
         Try
             rptFileName = GetReportFileName(52010062)
+            Dim dt As DataTable = CRService.VIEW_LOADING_INTRODUCTION_TM("630000351")
             'frmrptShowReport.Close()
-            With frmrptShowReport
+            With frmMainShowReport
                 .mRptFileName = rptFileName
-                '.ShowReport(strSQL)
+                .dt = dt
                 .Show()
             End With
 

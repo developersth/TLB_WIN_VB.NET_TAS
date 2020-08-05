@@ -2078,5 +2078,8 @@ Module mFunction
     Private Sub CHECK_AUTHORIZE_SCREEN(mUserName As String, mScreenID As Long, p3 As Integer)
         Throw New NotImplementedException
     End Sub
-   
+    Public Function App_Path() As String
+        App_Path = New FileInfo(Application.ExecutablePath).DirectoryName
+        'Return GetCurrDirectory()
+    End Function
 End Module

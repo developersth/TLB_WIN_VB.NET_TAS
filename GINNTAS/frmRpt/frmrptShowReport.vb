@@ -33,8 +33,6 @@ Public Class frmrptShowReport
         Me.Text = "# Show Report #"
         If (ValueParameter = 2) Then 'ตรวจสอบค่า parameter 2 คือพารามิเตอร์และสตริงคิวรี่ข้อมูล
             ShowReportParaQuery()
-        ElseIf (ValueParameter = 0) Then 'ตรวจสอบค่า parameter 0
-            ShowReportDataTable()
         Else
             ShowReportParameter()
         End If
@@ -91,7 +89,7 @@ Public Class frmrptShowReport
         Dim rpFileName As String
         Dim SApp_Path As String = App_Path()
         Dim Str As String = ""
-    
+
         'Dim getStr() As String = Split(SApp_Path, "\")
         'For i = 0 To getStr.Length - 3
         '    Str = Str & getStr(i) & "\"
@@ -151,12 +149,8 @@ Public Class frmrptShowReport
             objConn = Nothing
             CrystalReportViewer1 = Nothing
         End Try
-      
+
     End Sub
-    Public Function App_Path() As String
-        App_Path = New System.IO.FileInfo(Application.ExecutablePath).DirectoryName
-        'Return GetCurrDirectory()
-    End Function
     Private Sub ShowReportParameter()
         Dim rpt As New ReportDocument
         Dim mDataSet As New DataSet
