@@ -2840,7 +2840,6 @@ C:\Users\Macbook\Desktop\Github\TLB_WIN_VB.NET_TAS\GINNTAS\bin\Debug\CrystalDeci
 C:\Users\Macbook\Desktop\Github\TLB_WIN_VB.NET_TAS\GINNTAS\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
 C:\Users\Macbook\Desktop\Github\TLB_WIN_VB.NET_TAS\GINNTAS\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\Macbook\Desktop\Github\TLB_WIN_VB.NET_TAS\GINNTAS\bin\Debug\log4net.xml
-C:\Users\Macbook\Desktop\Github\TLB_WIN_VB.NET_TAS\GINNTAS\bin\Debug\Microsoft.ReportViewer.WinForms.xml
 C:\Users\Macbook\Desktop\Github\TLB_WIN_VB.NET_TAS\GINNTAS\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.xml
 C:\Users\Macbook\Desktop\Github\TLB_WIN_VB.NET_TAS\GINNTAS\obj\x86\Debug\GINNTAS.vbprojAssemblyReference.cache
 C:\Users\Macbook\Desktop\Github\TLB_WIN_VB.NET_TAS\GINNTAS\obj\x86\Debug\GINNTAS.frmCheckUserPw.resources
@@ -3055,3 +3054,5 @@ C:\Users\Macbook\Desktop\Github\TLB_WIN_VB.NET_TAS\GINNTAS\bin\Debug\EnvDTE.xml
 C:\Users\Macbook\Desktop\Github\TLB_WIN_VB.NET_TAS\GINNTAS\bin\Debug\VSLangProj.xml
 C:\Users\Macbook\Desktop\Github\TLB_WIN_VB.NET_TAS\GINNTAS\bin\Debug\VsWebSite.Interop.xml
 C:\Users\Macbook\Desktop\Github\TLB_WIN_VB.NET_TAS\GINNTAS\bin\Debug\EnvDTE80.xml
+C:\Users\Macbook\Desktop\Github\TLB_WIN_VB.NET_TAS\GINNTAS\bin\Debug\Report Files\Delivery_Receipt.rpt
+C:\Users\Macbook\Desktop\Github\TLB_WIN_VB.NET_TAS\GINNTAS\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
