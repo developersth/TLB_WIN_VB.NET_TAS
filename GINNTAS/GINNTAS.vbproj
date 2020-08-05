@@ -246,6 +246,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetTLB.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSet\DataSetTLB.vb">
+      <DependentUpon>DataSetTLB.xsd</DependentUpon>
+    </Compile>
     <Compile Include="frmCheckUserPw.Designer.vb">
       <DependentUpon>frmCheckUserPw.vb</DependentUpon>
     </Compile>

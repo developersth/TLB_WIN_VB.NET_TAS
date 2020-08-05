@@ -331,14 +331,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GINNTAS.exe" size="34182144">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GINNTAS.exe" size="34182656">
       <assemblyIdentity name="GINNTAS" version="5.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Hvd47yEE40jeLHhGQJc5GOWMb8A=</dsig:DigestValue>
+        <dsig:DigestValue>epVN6Foja0jtaPKk0IKVHiR0SRQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

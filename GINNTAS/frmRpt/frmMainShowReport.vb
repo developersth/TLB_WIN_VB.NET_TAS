@@ -15,7 +15,6 @@ Public Class frmMainShowReport
         rpt.SetDataSource(dt)
         CrystalReportViewer1.ReportSource = rpt
         CrystalReportViewer1.Refresh()
-        'CrystalReportViewer1.Dispose()
         CrystalReportViewer1 = Nothing
     End Sub
 

@@ -37,6 +37,7 @@ Partial Class frmMainShowReport
         Me.CrystalReportViewer1.SelectionFormula = ""
         Me.CrystalReportViewer1.Size = New System.Drawing.Size(1015, 527)
         Me.CrystalReportViewer1.TabIndex = 1
+        Me.CrystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         Me.CrystalReportViewer1.ToolPanelWidth = 267
         Me.CrystalReportViewer1.ViewTimeSelectionFormula = ""
         '
