@@ -1,5 +1,4 @@
-﻿Imports Oracle.DataAccess.Client
-Imports System.Data
+﻿Imports System.Data
 
 Public Class frmMainVehicle_sub
     Dim frm_work As Integer = 0 'Vehicle1=add ,2=Edit

@@ -277,7 +277,7 @@ Public Class COracle
         Return dt
     End Function
 
-    Public Function OpenDys(ByVal strSQL As String, ByVal MaxRecord As Integer, ByVal pTableName As String, ByRef mDataSet As DataSet, _
+    Public Function OpenDys(ByVal strSQL As String, ByVal MaxRecord As Integer, ByVal pTableName As String, ByRef mDataSet As DataSet,
                             Optional ByRef SQL_Execution_Error As String = "") As Boolean
         Dim oda As OracleDataAdapter
         Dim ds As New DataSet
@@ -306,6 +306,26 @@ Public Class COracle
             oda = Nothing
         End If
         Return bCheck
+    End Function
+    Public Function Query_TBL(ByVal sql As String, Optional ByRef SQL_Execution_Error As String = "") As DataTable
+        Dim dt As DataTable = New DataTable("tmp")
+        If oraConnect Then
+            Try
+                Dim comm As OracleCommand = New OracleCommand()
+                comm.Connection = oraConn
+                comm.CommandText = sql
+                Dim dr As OracleDataReader = comm.ExecuteReader()
+                dt.Load(dr)
+            Catch ex As Exception
+                logFile.WriteErrMessage("[OpenDyns] " & sql)
+                logFile.WriteErrMessage("[OpenDyns] " & ex.ToString)
+                SQL_Execution_Error = ex.ToString
+                CheckExecute(False)
+                MsgBox(SQL_Execution_Error, MsgBoxStyle.Information)
+            End Try
+        End If
+
+        Return dt
     End Function
 
     Public Function ExeSQL(ByVal strSQL As String, Optional ByRef SQL_Execution_Error As String = "") As Boolean

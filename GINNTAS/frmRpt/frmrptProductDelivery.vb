@@ -87,6 +87,10 @@ Public Class frmrptProductDelivery
     End Sub
 
     Private Sub frmrptProductDelivery_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        dtpChoosDate.Value = Date.Today
+        DTPTimeStart.Value = Convert.ToDateTime(dtpChoosDate.Value.Date.ToLongDateString & " " & "00:00:00")
+        dtpChoosDateEnd.Value = Date.Today
+        DTPTimeEnd.Value = Now
         FindDataTime()
         Show_fixGrindColor()
     End Sub
@@ -102,10 +106,12 @@ Public Class frmrptProductDelivery
     Private Sub cmdPrint_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdPrint.Click
         Dim index As Integer = msGridLoad.CurrentRow.Index
         If msGridLoad.Rows.Count <= 0 Or msGridLoad.CurrentRow.Index < 0 Then Exit Sub
-        P_GEN_DELIVERY_REPORT(msGridLoad.Rows(index).Cells(1).Value)
-        frmrptShowReport.mParameter = msGridLoad.Rows(index).Cells(1).Value
-        frmrptShowReport.mRptFileName = "Delivery_Receipt.rpt"
-        frmrptShowReport.Show()
+        Dim vLoadHeader_NO As String = String.Empty
+
+        vLoadHeader_NO = msGridLoad.Rows(index).Cells(1).Value.ToString()
+        P_GEN_DELIVERY_REPORT(vLoadHeader_NO)
+        ShowReport(vLoadHeader_NO)
+
     End Sub
 
     Private Sub cmdClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdClose.Click
@@ -121,7 +127,21 @@ Public Class frmrptProductDelivery
         End If
         Call DirectPrint(msGridLoad.Rows(index).Cells(1).Value, "Delivery_Receipt.rpt")
     End Sub
-
+    Private Sub ShowReport(ByVal pLoadNo)
+        Dim rptFileName = GetReportFileName(52010040)
+        Dim dt As DataTable = CRService.VIEW_DELIV_HEADER(pLoadNo)
+        Dim dt1 As DataTable = CRService.VIEW_DELIV_LINE(pLoadNo)
+        Dim dt2 As DataTable = CRService.VIEW_DELIV_SUM_LINE(pLoadNo)
+        With frmMainShowReport
+            .mRptFileName = rptFileName
+            .Subreports1 = "SUB_DELIV_LINE"
+            .Subreports2 = "SUB_DELIV_SUM_LINE"
+            .dt = dt
+            .dt1 = dt1
+            .dt2 = dt2
+            .Show()
+        End With
+    End Sub
     Private Sub DirectPrint(iLoadHeader_NO As String, iRptFileName As String)
         Dim sql_str As String
         Dim mDataSet As New DataSet
@@ -243,15 +263,14 @@ Public Class frmrptProductDelivery
         Dim index As Integer = msGridLoad.CurrentRow.Index
         If msGridLoad.Rows.Count <= 0 Or msGridLoad.CurrentRow.Index < 0 Then Exit Sub
         P_GEN_DELIVERY_REPORT(msGridLoad.Rows(index).Cells(1).Value)
-        frmrptShowReport.mParameter = Trim(msGridLoad.Rows(index).Cells(1).Value)
-        frmrptShowReport.mRptFileName = "Delivery_Receipt.rpt"
-        frmrptShowReport.Show()
+        ShowReport(msGridLoad.Rows(index).Cells(1).Value.ToString())
+
     End Sub
     Private Sub P_GEN_DELIVERY_REPORT(LoadNO As String)
         Dim strSQL As String
         strSQL = " "
         strSQL = strSQL & " Begin "
-        strSQL = strSQL & " RPT.GEN_DELIVERY_REPORT(" & Convert.ToInt32(LoadNO) & ");End;"
+        strSQL = strSQL & " RPT.GEN_DELIVERY_REPORT(" & LoadNO & ");End;"
         If Oradb.ExeSQL(strSQL) Then
         End If
     End Sub

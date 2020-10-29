@@ -702,6 +702,21 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member>
+<member name="T:GINNTAS.DataSetTLB.VIEW_DELIV_SUM_LINEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:GINNTAS.DataSetTLB.VIEW_DELIV_LINEDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:GINNTAS.DataSetTLB.VIEW_DELIV_HEADERDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
 <member name="T:GINNTAS.DataSetTLB.VIEW_LOADING_INTRODUCTION_TMRow">
 <summary>
 Represents strongly named DataRow class.
@@ -712,12 +727,42 @@ Represents strongly named DataRow class.
 Represents strongly named DataRow class.
 </summary>
 </member>
+<member name="T:GINNTAS.DataSetTLB.VIEW_DELIV_SUM_LINERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:GINNTAS.DataSetTLB.VIEW_DELIV_LINERow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:GINNTAS.DataSetTLB.VIEW_DELIV_HEADERRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
 <member name="T:GINNTAS.DataSetTLB.VIEW_LOADING_INTRODUCTION_TMRowChangeEvent">
 <summary>
 Row event argument class
 </summary>
 </member>
 <member name="T:GINNTAS.DataSetTLB.DAILY_LOADING_DETAILRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:GINNTAS.DataSetTLB.VIEW_DELIV_SUM_LINERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:GINNTAS.DataSetTLB.VIEW_DELIV_LINERowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:GINNTAS.DataSetTLB.VIEW_DELIV_HEADERRowChangeEvent">
 <summary>
 Row event argument class
 </summary>

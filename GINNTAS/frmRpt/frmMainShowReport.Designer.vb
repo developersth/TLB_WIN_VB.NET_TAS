@@ -22,31 +22,31 @@ Partial Class frmMainShowReport
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.CrystalReportViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CrysRPTViewer = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.SuspendLayout()
         '
-        'CrystalReportViewer1
+        'CrysRPTViewer
         '
-        Me.CrystalReportViewer1.ActiveViewIndex = -1
-        Me.CrystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CrystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default
-        Me.CrystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CrystalReportViewer1.Location = New System.Drawing.Point(0, 0)
-        Me.CrystalReportViewer1.Margin = New System.Windows.Forms.Padding(4)
-        Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
-        Me.CrystalReportViewer1.SelectionFormula = ""
-        Me.CrystalReportViewer1.Size = New System.Drawing.Size(1015, 527)
-        Me.CrystalReportViewer1.TabIndex = 1
-        Me.CrystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
-        Me.CrystalReportViewer1.ToolPanelWidth = 267
-        Me.CrystalReportViewer1.ViewTimeSelectionFormula = ""
+        Me.CrysRPTViewer.ActiveViewIndex = -1
+        Me.CrysRPTViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.CrysRPTViewer.Cursor = System.Windows.Forms.Cursors.Default
+        Me.CrysRPTViewer.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CrysRPTViewer.Location = New System.Drawing.Point(0, 0)
+        Me.CrysRPTViewer.Margin = New System.Windows.Forms.Padding(4)
+        Me.CrysRPTViewer.Name = "CrysRPTViewer"
+        Me.CrysRPTViewer.SelectionFormula = ""
+        Me.CrysRPTViewer.Size = New System.Drawing.Size(1015, 527)
+        Me.CrysRPTViewer.TabIndex = 1
+        Me.CrysRPTViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
+        Me.CrysRPTViewer.ToolPanelWidth = 267
+        Me.CrysRPTViewer.ViewTimeSelectionFormula = ""
         '
         'frmMainShowReport
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1015, 527)
-        Me.Controls.Add(Me.CrystalReportViewer1)
+        Me.Controls.Add(Me.CrysRPTViewer)
         Me.Name = "frmMainShowReport"
         Me.Text = "แสดงข้อมูลรายงาน"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
@@ -54,5 +54,5 @@ Partial Class frmMainShowReport
 
     End Sub
 
-    Friend WithEvents CrystalReportViewer1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
+    Friend WithEvents CrysRPTViewer As CrystalDecisions.Windows.Forms.CrystalReportViewer
 End Class

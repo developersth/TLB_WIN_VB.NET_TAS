@@ -3549,3 +3549,4 @@ D:\My Project\TLB Project\SourceCode\TLB_WIN_VB.NET_TAS\GINNTAS\bin\Debug\Crysta
 D:\My Project\TLB Project\SourceCode\TLB_WIN_VB.NET_TAS\GINNTAS\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
 D:\My Project\TLB Project\SourceCode\TLB_WIN_VB.NET_TAS\GINNTAS\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
 D:\My Project\TLB Project\SourceCode\TLB_WIN_VB.NET_TAS\GINNTAS\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\My Project\TLB Project\SourceCode\TLB_WIN_VB.NET_TAS\GINNTAS\bin\Debug\Report Files\Delivery_Receipt(Auto).rpt
