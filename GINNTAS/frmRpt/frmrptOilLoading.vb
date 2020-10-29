@@ -131,7 +131,7 @@ Public Class frmrptOilLoading
     Private Sub ShowReport()
         Dim index As Integer = msGridLoad.CurrentRow.Index
         Dim vLoadNo = msGridLoad.Rows(index).Cells(1).Value
-        Dim rptFileName = GetReportFileName(52010063)
+        Dim rptFileName = GetReportFileName(52010007)
         Dim dt As DataTable = CRService.DAILY_LOADING_DETAIL(vLoadNo)
         With frmMainShowReport
             .mRptFileName = rptFileName

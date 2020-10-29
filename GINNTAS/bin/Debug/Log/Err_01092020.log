@@ -1,0 +1,22 @@
+01/09/2020 17:51:33 [ExecuteSQL] Begin ADD_JOURNAL(0,0,100,'ADMIN','DESKTOP-5DAV85A',102200,'ADMIN','???','???'); End;
+01/09/2020 17:51:33 [ExecuteSQL] Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00001: unique constraint (REPTB.PK_REPLICATION_GENERAL_DATA) violated
+ORA-06512: at "REPTB.P_INSERT_REP_5SEC", line 45
+ORA-06512: at "TAS.TRG_REP_JOURNAL", line 4
+ORA-04088: error during execution of trigger 'TAS.TRG_REP_JOURNAL'
+ORA-06512: at "TAS.ADD_JOURNAL", line 19
+ORA-06512: at line 1
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at GINNTAS.COracle.ExeSQL(String strSQL, String& SQL_Execution_Error) in D:\งาน\TLB Project\SourceCode\TLB_WIN_VB.NET_TAS\GINNTAS\classs\COracle.vb:line 319
+01/09/2020 17:53:08 [ExecuteSQL] Begin ADD_JOURNAL(0,0,100,'ADMIN','DESKTOP-5DAV85A',102199,'ADMIN','???','???'); End;
+01/09/2020 17:53:08 [ExecuteSQL] Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-00001: unique constraint (REPTB.PK_REPLICATION_GENERAL_DATA) violated
+ORA-06512: at "REPTB.P_INSERT_REP_5SEC", line 45
+ORA-06512: at "TAS.TRG_REP_JOURNAL", line 4
+ORA-04088: error during execution of trigger 'TAS.TRG_REP_JOURNAL'
+ORA-06512: at "TAS.ADD_JOURNAL", line 19
+ORA-06512: at line 1
+   at OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   at GINNTAS.COracle.ExeSQL(String strSQL, String& SQL_Execution_Error) in D:\งาน\TLB Project\SourceCode\TLB_WIN_VB.NET_TAS\GINNTAS\classs\COracle.vb:line 319
